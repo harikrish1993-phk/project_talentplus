@@ -1,5 +1,5 @@
 'use client';
-import { formatRelativeTime } from '@/lib/utils/formatting';
+import { formatRelativeTime } from '@/lib/utils/formatting-fix';
 
 export default function ActivityFeed({ activities }: any) {
   return (

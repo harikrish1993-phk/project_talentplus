@@ -159,7 +159,7 @@ export default function SubmissionKanban({
         <div className="flex gap-4 overflow-x-auto pb-4">
           {columns.map((column) => (
             <Droppable key={column.id} droppableId={column.id}>
-              {(provided, snapshot) => (
+              {(provided: any, snapshot: any) => (
                 <div
                   ref={provided.innerRef}
                   {...provided.droppableProps}
@@ -189,7 +189,7 @@ export default function SubmissionKanban({
                           index={index}
                           isDragDisabled={isUpdating}
                         >
-                          {(provided, snapshot) => (
+                          {(provided: any, snapshot: any) => (
                             <div
                               ref={provided.innerRef}
                               {...provided.draggableProps}
